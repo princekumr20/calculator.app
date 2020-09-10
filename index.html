@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+<style>
+    body{
+       /* background: #74ebd5;  /* fallback for old browsers */
+        /*background: -webkit-linear-gradient(to right, #ACB6E5, #74ebd5);  /* Chrome 10-25, Safari 5.1-6 */
+        /*background: linear-gradient(to right, #ACB6E5, #74ebd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+          /*background-image: url('https://previews.123rf.com/images/inkdrop/inkdrop1801/inkdrop180102542/92939459-white-lightbulb-against-a-yellow-background-thinking-concept-3d-rendering.jpg');*/
+         background-image: url('https://c8.alamy.com/comp/JAK99G/positive-thinking-message-written-on-sand-with-waves-in-background-JAK99G.jpg');
+         
+}
+    .button{
+        width: 100%;
+        height: 100%;
+        font-size: 30px;
+        padding:10px;
+        margin: 0px;
+        border: 1px solid black;
+        
+        /*color: white;*/
+        /*background-image:url("https://cdn.hipwallpaper.com/i/39/26/nptSkm.jpg");*/
+       background-image: url('https://c8.alamy.com/comp/JAK99G/positive-thinking-message-written-on-sand-with-waves-in-background-JAK99G.jpg');
+      
+        height: 80px;
+        border-radius: 12px;
+    }
+    .button:hover{
+        background-image: url('https://cdn.hipwallpaper.com/i/39/26/nptSkm.jpg');
+    }
+   
+</style>
+<body>
+
+    <div class="container" >
+        <div class="row mt-5">
+            <div class="col-md-6 offset-3">
+                <div class="card" style="background-image: url('https://c8.alamy.com/comp/JAK99G/positive-thinking-message-written-on-sand-with-waves-in-background-JAK99G.jpg');">
+                    <div class="card-body">
+                        <div class="row">
+                            <h1  id="result" class="display-1 float-md-right">0</h1><br>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-3 px-0">
+                                <button class="button number">1</button>
+                            </div>
+                            <div class="col-md-3 px-0">
+                                <button class="button number">2</button>
+                            </div>
+                            <div class="col-md-3 px-0">
+                                <button class="button number">3</button>
+                            </div>
+                            <div class="col-md-3 px-0">
+                                <button class="button operator" style="background-color: #34495e">+</button>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-3 px-0">
+                                <button class="button number">4</button>
+                            </div>
+                            <div class="col-md-3 px-0">
+                                <button class="button number">5</button>
+                            </div>
+                            <div class="col-md-3 px-0">
+                                <button class="button number">6</button>
+                            </div>
+                            <div class="col-md-3 px-0">
+                                <button class="button operator" style="background-color: #34495e">-</button>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-3 px-0">
+                                <button class="button number">7</button>
+                            </div>
+                            <div class="col-md-3 px-0">
+                                <button class="button number">8</button>
+                            </div>
+                            <div class="col-md-3 px-0">
+                                <button class="button number">9</button>
+                            </div>
+                            <div class="col-md-3 px-0">
+                                <button class="button operator" style="background-color: #34495e">*</button>
+                            </div>
+                        </div>
+                         <div class="row">
+                            <div class="col-md-3 px-0">
+                                <button class="button operator">sinx</button>
+                            </div>
+                            <div class="col-md-3 px-0">
+                                <button class="button operator ">cosx</button>
+                            </div>
+                            <div class="col-md-3 px-0">
+                                <button class="button operator">tanx</button>
+                            </div>
+                            <div class="col-md-3 px-0">
+                                <button class="button operator " style="background-color: #34495e">log</button>
+                            </div>
+                        </div>
+                        
+
+                         <div class="row">
+                            <div class="col-md-3 px-0">
+                                <button class="button operator">exp</button>
+                            </div>
+                            <div class="col-md-3 px-0">
+                                <button class="button operator ">const</button>
+                            </div>
+                            <div class="col-md-3 px-0">
+                                <button class="button operator">1/2</button>
+                            </div>
+                            <div class="col-md-3 px-0">
+                                <button class="button operator " style="background-color: #34495e">yx</button>
+                            </div>
+                        </div>
+                      
+
+
+                        <div class="row">
+                            <div class="col-md-3 px-0">
+                                <button class="button number">0</button>
+                            </div>
+                            <div class="col-md-3 px-0">
+                                <button  id="clear"  class="button " style="background-color: #34495e">C</button>
+                            </div>
+                            <div class="col-md-3 px-0">
+                                <button class="button operator" style="background-color: #34495e">/</button>
+                            </div>
+                            <div class="col-md-3 px-0">
+                                <button  id="equal" class="button" style="background-color: #34495e">=</button>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script
+  src="https://code.jquery.com/jquery-3.5.1.min.js"
+  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+  crossorigin="anonymous"></script>
+  <script src="a.js"></script>
+
+
+</body>
+</html>
